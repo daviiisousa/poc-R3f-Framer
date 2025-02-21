@@ -19,7 +19,7 @@ export function RotatingBox() {
       onPointerOver={() => setHover(true)}
       onPointerOut={() => setHover(false)}
       >
-        <sphereGeometry args={[1, 32, 32]} />
+        <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial 
         color={hovered ? 'hotpink' : 'orange'} />
       </mesh>
