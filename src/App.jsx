@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import { RotatingBox } from "./components/RotatingBox";
 
-
+import "./App.css";
 
 export default function App() {
   function metadeHeight() {
@@ -17,18 +17,23 @@ export default function App() {
   const metadeDaAltura = metadeHeight();
   const metadeDoEspaço = metadeWidth();
   return (
-    <div>
+    <div className="vo">
       <motion.div
         drag
         dragConstraints={{
           top: -metadeDaAltura,
-          bottom: metadeDaAltura,
+          bottom: metadeDaAltura - 120,
           right: metadeDoEspaço,
           left: -metadeDoEspaço,
         }}
-        style={{ width: "100vw", height: "100vh" }}
+        className="pai"
       >
-        <Canvas>
+        <Canvas
+          camera={{
+            fov: 40
+          }}
+          
+        >
           <ambientLight />
           <pointLight position={[1, 1, 1]} />
           <RotatingBox />

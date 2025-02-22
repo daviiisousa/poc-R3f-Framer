@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.pai{
+    width: 500px;
+    height: 500px;
+    background-color: none;
+}
+
+.vo{
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #ff416c 0%, #ff4b2b 50%, #ff7e5f 100%); */
+    background-color: #1b1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
