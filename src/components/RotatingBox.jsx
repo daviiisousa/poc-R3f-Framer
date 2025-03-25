@@ -12,7 +12,7 @@ export function RotatingBox() {
     }
   });
 
-  const diceTexture = useTexture("../public/texturaPedra.jpg"); // Substitua pelo caminho da sua textura
+  const diceTexture = useTexture("texturaPedra.jpg"); // Substitua pelo caminho da sua textura
 
   return (
     <mesh
